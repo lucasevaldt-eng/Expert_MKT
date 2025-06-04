@@ -1,53 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formação Especialista em Marketing</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
 <body class="bg-neutral-100 text-neutral-900">
-  <!-- POP-UP LEAD CAPTURE -->
+
+  <!-- POP-UP DE CAPTURA -->
   <div id="popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full relative">
       <button onclick="document.getElementById('popup').classList.add('hidden')" class="absolute top-2 right-4 text-gray-400 hover:text-black text-2xl">&times;</button>
       <h2 class="text-2xl font-bold mb-4 text-center">Acesse o Conteúdo Exclusivo</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Nome completo" class="w-full p-3 border border-gray-300 rounded-lg" required>
-        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg" required>
-        <input type="tel" placeholder="WhatsApp" class="w-full p-3 border border-gray-300 rounded-lg" required>
+      <form action="https://docs.google.com/forms/d/e/SEU_ID_DO_FORMULARIO/formResponse" method="POST" target="_blank" onsubmit="redirecionar()">
+        <input name="entry.1234567890" type="text" placeholder="Nome completo" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <input name="entry.2345678901" type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <input name="entry.3456789012" type="tel" placeholder="WhatsApp" class="w-full p-3 border border-gray-300 rounded-lg" required />
         <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-3 rounded-lg hover:bg-yellow-300 transition">Quero Receber o Conteúdo</button>
       </form>
     </div>
   </div>
 
+  <!-- HERO -->
   <section class="bg-neutral-900 text-white text-center py-20 px-6">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Formação Especialista em Marketing Digital</h1>
-    <p class="text-xl max-w-3xl mx-auto font-light">Um programa completo para dominar tráfego pago, funis de vendas, persuasão e estratégias de marketing digital de alta performance.</p>
+    <p class="text-xl max-w-3xl mx-auto font-light">Aprenda a dominar tráfego pago, funis, copywriting e vendas.</p>
     <button onclick="document.getElementById('popup').classList.remove('hidden')" class="mt-8 bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full transition hover:bg-yellow-300">Quero Acessar</button>
   </section>
 
-  <section id="modulos" class="py-20 px-6 max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold mb-4">O que você vai aprender</h2>
-      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">Cada módulo foi desenhado para desenvolver habilidades práticas e estratégicas em marketing digital com foco em resultados reais.</p>
+  <!-- SCRIPTS -->
+  <script>
+    function redirecionar() {
+      setTimeout(() => {
+        window.location.href = 'apresentacao.html';
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apresentação da Formação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-white text-neutral-900">
+
+  <section class="bg-black text-white text-center py-20 px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Descubra o Que Espera por Você</h1>
+    <p class="text-xl max-w-2xl mx-auto font-light">Veja o que você aprenderá e como essa formação pode transformar sua atuação no digital.</p>
+  </section>
+
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">O Que Você Vai Aprender</h2>
+    <div class="grid gap-8">
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-500 mb-2">✓ Campanhas milionárias no Meta Ads</h3>
+        <p>Segmente, escale e crie criativos que convertem com consistência.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-500 mb-2">✓ Domine Google e YouTube Ads</h3>
+        <p>Conquiste clientes no momento exato da intenção com campanhas de pesquisa, display e vídeo.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-500 mb-2">✓ Funis de alta conversão</h3>
+        <p>Transforme cliques em clientes fiéis com ToFu, MoFu e BoFu.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-yellow-500 mb-2">✓ Técnicas de persuasão e copywriting</h3>
+        <p>Venda todos os dias com textos que criam desejo e eliminam objeções.</p>
+      </div>
     </div>
 
-    <div class="grid gap-12">
-      <!-- Conteúdo dos módulos aqui... (pode incluir os módulos anteriores se desejar) -->
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold mb-4">Pronto para acessar o curso completo?</h3>
+      <a href="checkout.html" class="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full transition hover:bg-yellow-300">Comprar Agora</a>
     </div>
   </section>
 
+  <footer class="bg-yellow-400 text-neutral-900 text-center py-6 text-sm mt-20">
+    &copy; 2025 - Formação Especialista | Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Formação Especialista</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
+    n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1" />
+  </noscript>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body class="bg-neutral-100 text-neutral-900">
+
   <section class="bg-neutral-900 text-white text-center py-20 px-6">
-    <blockquote class="text-2xl font-semibold max-w-3xl mx-auto">“A única maneira de viver bem é sair imediatamente de onde está ruim.”</blockquote>
+    <h1 class="text-4xl font-extrabold mb-4">Finalizar Compra</h1>
+    <p class="text-lg max-w-xl mx-auto">Você está a um passo de dominar as estratégias que transformam tráfego em faturamento real.</p>
+  </section>
+
+  <section class="py-16 px-6 max-w-xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-6">Formação Especialista em Marketing Digital</h2>
+    <p class="text-neutral-700 mb-4">✔ Acesso vitalício<br>✔ 6 módulos completos<br>✔ Garantia de 7 dias<br>✔ Bônus exclusivos</p>
+    <div class="text-3xl font-extrabold text-yellow-500 mb-6">R$ 197,00</div>
+    <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=SEU_ID_DE_CHECKOUT" target="_blank" class="inline-block bg-yellow-400 text-black font-bold py-4 px-8 rounded-full text-lg hover:bg-yellow-300 transition">
+      PAGAR COM MERCADO PAGO
+    </a>
+    <p class="mt-4 text-sm text-neutral-500">Pagamento 100% seguro via Mercado Pago</p>
   </section>
 
   <footer class="bg-yellow-400 text-neutral-900 text-center py-6 text-sm">
-    &copy; 2025 - Formação Especialista | Desenvolvido com excelência em Marketing Digital de Alta Performance.
+    &copy; 2025 - Formação Especialista | Todos os direitos reservados.
   </footer>
 </body>
 </html>
